@@ -21,10 +21,11 @@ const server = http.createServer((req, res) => {
             case "/":
                 res.write('<body style="color: grey"></body>')
                 res.write('<h1 style="color: orange">Welcome To My Universe</h1>');
-                res.write('<p>I wonder what else we can send...</p>');
+                res.write('<p style= "color: brown">The most important thing is, whatever you do decide to choose, take it seriously and do your best</p>');
               break;
-            case "/test":
+            case "/login":
               res.write('<h1 style="color: orange"> Lindsey Weche App!!! </h1>');
+              res.write('<p style="color: brown">To bring about change, you must not be afraid to take the first step. We will fail when we fail to try </p>')
               break;
             default:
               res.statusCode = 404;
